@@ -33,15 +33,15 @@
       font-size: 17px;
       line-height: 1.65;
     }
-    main { max-width: 680px; margin: 0 auto; padding: 96px 24px 64px; }
+    main { max-width: 860px; margin: 0 auto; padding: 96px 24px 64px; }
     .about { display: flex; gap: 28px; align-items: flex-start; }
     @media (max-width: 540px) {
       .about { flex-direction: column; gap: 20px; }
     }
     .photo {
       position: relative;
-      width: 132px; height: 132px;
-      border-radius: 50%;
+      width: 132px; height: 170px;
+      border-radius: 0;
       overflow: hidden;
       flex-shrink: 0;
       background: var(--line);
@@ -84,6 +84,7 @@
     .item-meta { color: var(--muted); font-size: 0.9rem; }
     .item p { color: var(--muted); margin-top: 4px; }
     .pub { margin-bottom: 28px; }
+    h3 { font-size: 1.15rem; font-weight: 600; margin: 40px 0 18px; }
     .pub-note { color: var(--muted); font-size: 0.85rem; margin: -12px 0 20px; }
     .pub-title { font-weight: 500; }
     .pub-authors, .pub-venue { color: var(--muted); font-size: 0.95rem; }
@@ -154,6 +155,7 @@
         <div class="pub-authors">Zheqing Zhu, Rodrigo de Salvo Braz, <strong>Jalaj Bhandari</strong>, Daniel R. Jiang, Yi Wan, Yonathan Efroni, Liyuan Wang, Ruiyang Xu, Hongbo Guo, Alex Nikulkov, Dmytro Korenkevych, Urun Dogan, Frank Cheng, Zheng Wu, Wanqiao Xu</div>
         <div class="pub-venue">JMLR, 2024 <a class="pub-arxiv" href="https://www.jmlr.org/papers/volume25/24-0196/24-0196.pdf">[link]</a></div>
       </div>
+      <h3>RL Theory</h3>
       <div class="pub">
         <a class="pub-title" href="https://arxiv.org/abs/1906.01786">Global Optimality Guarantees For Policy Gradient Methods</a>
         <div class="pub-authors"><strong>Jalaj Bhandari</strong>, Daniel Russo</div>
