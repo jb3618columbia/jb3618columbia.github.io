@@ -34,6 +34,29 @@
       line-height: 1.65;
     }
     main { max-width: 680px; margin: 0 auto; padding: 96px 24px 64px; }
+    .about { display: flex; gap: 28px; align-items: flex-start; }
+    @media (max-width: 540px) {
+      .about { flex-direction: column; gap: 20px; }
+    }
+    .photo {
+      position: relative;
+      width: 132px; height: 132px;
+      border-radius: 50%;
+      overflow: hidden;
+      flex-shrink: 0;
+      background: var(--line);
+      display: grid; place-items: center;
+    }
+    .photo span {
+      font-family: "Fraunces", Georgia, serif;
+      font-size: 2.6rem;
+      color: var(--muted);
+    }
+    .photo img {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+    }
     h1 {
       font-family: "Fraunces", Georgia, serif;
       font-weight: 600;
@@ -59,6 +82,11 @@
     .item-title { font-weight: 500; }
     .item-meta { color: var(--muted); font-size: 0.9rem; }
     .item p { color: var(--muted); margin-top: 4px; }
+    .pub { margin-bottom: 28px; }
+    .pub-title { font-weight: 500; }
+    .pub-authors, .pub-venue { color: var(--muted); font-size: 0.95rem; }
+    .pub-authors strong { color: var(--text); font-weight: 500; }
+    .pub-links { display: flex; gap: 14px; margin-top: 4px; font-size: 0.9rem; }
     footer { margin-top: 80px; color: var(--muted); font-size: 0.85rem; }
   </style>
 </head>
@@ -71,49 +99,40 @@
         <a href="mailto:jalajbhandari@gmail.com">Email</a>
         <a href="https://github.com/jb3618columbia">GitHub</a>
         <a href="#">LinkedIn</a>
-        <a href="#">Resume</a>
+        <!-- Upload your CV as cv.pdf next to this file. -->
+        <a href="cv.pdf">CV</a>
       </nav>
     </header>
 
     <section id="about">
       <h2>About</h2>
-      <p>[A few sentences about you: what you study or work on, what you're interested in, and what you're looking for next.]</p>
-      <p>[Optional second paragraph: something more personal, like hobbies or what you do outside work.]</p>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="item">
-        <div class="item-head">
-          <a class="item-title" href="#">[Project name]</a>
-          <span class="item-meta">[Year]</span>
+      <div class="about">
+        <!-- To add your photo: upload an image named photo.jpg to the repo next to this file. -->
+        <div class="photo">
+          <img src="photo.jpg" alt="Photo of Jalaj Bhandari" onerror="this.remove()">
+          <span>JB</span>
         </div>
-        <p>[One or two sentences on what it is and what you did.]</p>
-      </div>
-      <div class="item">
-        <div class="item-head">
-          <a class="item-title" href="#">[Project name]</a>
-          <span class="item-meta">[Year]</span>
+        <div>
+          <p>[A few sentences about you: what you study or work on, what you're interested in, and what you're looking for next.]</p>
+          <p>[Optional second paragraph: something more personal, like hobbies or what you do outside work.]</p>
         </div>
-        <p>[One or two sentences on what it is and what you did.]</p>
       </div>
     </section>
 
-    <section id="experience">
-      <h2>Experience &amp; Education</h2>
-      <div class="item">
-        <div class="item-head">
-          <span class="item-title">Columbia University</span>
-          <span class="item-meta">[Years]</span>
-        </div>
-        <p>[Degree and field]</p>
+    <section id="publications">
+      <h2>Publications and Preprints</h2>
+      <!-- Copy one <div class="pub"> block per paper. Newest first. -->
+      <div class="pub">
+        <a class="pub-title" href="#">[Paper title]</a>
+        <div class="pub-authors"><strong>Jalaj Bhandari</strong>, [Co-author], [Co-author]</div>
+        <div class="pub-venue"><em>[Conference or journal]</em>, [Year]</div>
+        <div class="pub-links"><a href="#">PDF</a><a href="#">arXiv</a><a href="#">Code</a></div>
       </div>
-      <div class="item">
-        <div class="item-head">
-          <span class="item-title">[Role] · [Organization]</span>
-          <span class="item-meta">[Years]</span>
-        </div>
-        <p>[What you did there.]</p>
+      <div class="pub">
+        <a class="pub-title" href="#">[Paper title]</a>
+        <div class="pub-authors">[Co-author], <strong>Jalaj Bhandari</strong></div>
+        <div class="pub-venue"><em>Preprint</em>, [Year]</div>
+        <div class="pub-links"><a href="#">arXiv</a></div>
       </div>
     </section>
 
