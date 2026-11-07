@@ -84,8 +84,10 @@
     .item-meta { color: var(--muted); font-size: 0.9rem; }
     .item p { color: var(--muted); margin-top: 4px; }
     .pub { margin-bottom: 28px; }
+    .pub-note { color: var(--muted); font-size: 0.85rem; margin: -12px 0 20px; }
     .pub-title { font-weight: 500; }
     .pub-authors, .pub-venue { color: var(--muted); font-size: 0.95rem; }
+    .pub-venue { margin-top: 6px; font-weight: 600; }
     .pub-authors strong { color: var(--text); font-weight: 500; }
     .pub-links { display: flex; gap: 14px; margin-top: 4px; font-size: 0.9rem; }
     footer { margin-top: 80px; color: var(--muted); font-size: 0.85rem; }
@@ -121,17 +123,24 @@
 
     <section id="publications">
       <h2>Publications and Preprints</h2>
+      <p class="pub-note">* Equal contribution</p>
       <!-- Copy one <div class="pub"> block per paper. Newest first. -->
+      <div class="pub">
+        <a class="pub-title" href="https://arxiv.org/abs/2611.06868">On Turn-Level Best-of-N Sampling for Scaling LLM Agents</a>
+        <div class="pub-authors"><strong>Jalaj Bhandari</strong>*, Dhawal Gupta*, Hongli Zhan*, Zhenting Wang, Varad Pimpalkhute, Zhengzhong Liu, Eric Xing, Rupesh Srivastava</div>
+        <div class="pub-venue">Preprint, 2026</div>
+        <div class="pub-links"><a href="https://arxiv.org/abs/2611.06868">arXiv</a></div>
+      </div>
       <div class="pub">
         <a class="pub-title" href="#">[Paper title]</a>
         <div class="pub-authors"><strong>Jalaj Bhandari</strong>, [Co-author], [Co-author]</div>
         <div class="pub-venue"><em>[Conference or journal]</em>, [Year]</div>
-        <div class="pub-links"><a href="#">PDF</a><a href="#">arXiv</a><a href="#">Code</a></div>
+        <div class="pub-links"><a href="#">arXiv</a></div>
       </div>
       <div class="pub">
         <a class="pub-title" href="#">[Paper title]</a>
         <div class="pub-authors">[Co-author], <strong>Jalaj Bhandari</strong></div>
-        <div class="pub-venue"><em>Preprint</em>, [Year]</div>
+        <div class="pub-venue">Preprint, [Year]</div>
         <div class="pub-links"><a href="#">arXiv</a></div>
       </div>
     </section>
