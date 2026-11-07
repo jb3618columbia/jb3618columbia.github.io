@@ -89,7 +89,7 @@
     .pub-authors, .pub-venue { color: var(--muted); font-size: 0.95rem; }
     .pub-venue { margin-top: 6px; font-weight: 600; }
     .pub-authors strong { color: var(--text); font-weight: 500; }
-    .pub-links { display: flex; gap: 14px; margin-top: 4px; font-size: 0.9rem; }
+    .pub-arxiv { font-weight: 400; margin-left: 6px; white-space: nowrap; }
     footer { margin-top: 80px; color: var(--muted); font-size: 0.85rem; }
   </style>
 </head>
@@ -98,11 +98,11 @@
     <header>
       <h1>Jalaj Bhandari</h1>
       <nav>
-        <a href="mailto:jalajbhandari@gmail.com">Email</a>
-        <a href="https://github.com/jb3618columbia">GitHub</a>
-        <a href="#">LinkedIn</a>
+        <a href="mailto:jb3618@columbia.edu">[Email]</a>
+        <a href="https://scholar.google.com/citations?user=HkEQWYcAAAAJ&amp;hl=en">[Google Scholar]</a>
+        <a href="https://www.linkedin.com/in/jalaj-bhandari-phd-b57b7580/">[LinkedIn]</a>
         <!-- Upload your CV as cv.pdf next to this file. -->
-        <a href="cv.pdf">CV</a>
+        <a href="cv.pdf">[CV]</a>
       </nav>
     </header>
 
@@ -115,33 +115,59 @@
           <span>JB</span>
         </div>
         <div>
-          <p>[A few sentences about you: what you study or work on, what you're interested in, and what you're looking for next.]</p>
-          <p>[Optional second paragraph: something more personal, like hobbies or what you do outside work.]</p>
+          <p>I am a Research Scientist at the Institute of Foundation Models (IFM), where I work on post-training the K2 series of open-weight foundation models. I contributed to the latest release, K2-Horizon.</p>
+          <p>Before IFM, I was a researcher at Meta. I completed my PhD at Columbia University.</p>
         </div>
       </div>
     </section>
 
     <section id="publications">
-      <h2>Publications and Preprints</h2>
-      <p class="pub-note">* Equal contribution</p>
+      <h2>Selected Publications and Preprints</h2>
       <!-- Copy one <div class="pub"> block per paper. Newest first. -->
       <div class="pub">
         <a class="pub-title" href="https://arxiv.org/abs/2611.06868">On Turn-Level Best-of-N Sampling for Scaling LLM Agents</a>
         <div class="pub-authors"><strong>Jalaj Bhandari</strong>*, Dhawal Gupta*, Hongli Zhan*, Zhenting Wang, Varad Pimpalkhute, Zhengzhong Liu, Eric Xing, Rupesh Srivastava</div>
-        <div class="pub-venue">Preprint, 2026</div>
-        <div class="pub-links"><a href="https://arxiv.org/abs/2611.06868">arXiv</a></div>
+        <div class="pub-venue">Preprint, 2026 <a class="pub-arxiv" href="https://arxiv.org/abs/2611.06868">[arXiv]</a></div>
       </div>
       <div class="pub">
-        <a class="pub-title" href="#">[Paper title]</a>
-        <div class="pub-authors"><strong>Jalaj Bhandari</strong>, [Co-author], [Co-author]</div>
-        <div class="pub-venue"><em>[Conference or journal]</em>, [Year]</div>
-        <div class="pub-links"><a href="#">arXiv</a></div>
+        <a class="pub-title" href="https://arxiv.org/abs/2605.25507">Credit Assignment with Resets in Language Model Reasoning</a>
+        <div class="pub-authors">Ankur Samanta, Akshayaa Magesh, Ayush Jain, Youliang Yu, Daniel Jiang, Kavosh Asadi, Kaveh Hassani, Paul Sajda, <strong>Jalaj Bhandari</strong>, Yonathan Efroni</div>
+        <div class="pub-venue">Accepted at NeurIPS, 2026 <a class="pub-arxiv" href="https://arxiv.org/abs/2605.25507">[arXiv]</a></div>
       </div>
       <div class="pub">
-        <a class="pub-title" href="#">[Paper title]</a>
-        <div class="pub-authors">[Co-author], <strong>Jalaj Bhandari</strong></div>
-        <div class="pub-venue">Preprint, [Year]</div>
-        <div class="pub-links"><a href="#">arXiv</a></div>
+        <a class="pub-title" href="https://arxiv.org/abs/2602.02416">Structure Enables Effective Self-Localization of Errors in LLMs</a>
+        <div class="pub-authors">Ankur Samanta, Akshayaa Magesh, Ayush Jain, Kavosh Asadi, Youliang Yu, Daniel R. Jiang, Boris Vidolov, Kaveh Hassani, Paul Sajda, <strong>Jalaj Bhandari</strong>*, Yonathan Efroni*</div>
+        <div class="pub-venue">ICML, 2026 <a class="pub-arxiv" href="https://arxiv.org/abs/2602.02416">[arXiv]</a></div>
+      </div>
+      <div class="pub">
+        <a class="pub-title" href="https://arxiv.org/abs/2607.19313">Off-Context GRPO: Learning to Reason on Hard Problems using Privileged Information</a>
+        <div class="pub-authors">Priyank Agrawal, Ankur Samanta, Shervin Ghasemlou, Boris Vidolov, <strong>Jalaj Bhandari</strong>, Kavosh Asadi, Daniel Jiang, Aditya Modi</div>
+        <div class="pub-venue">Preprint, 2026 <a class="pub-arxiv" href="https://arxiv.org/abs/2607.19313">[arXiv]</a></div>
+      </div>
+      <div class="pub">
+        <a class="pub-title" href="https://arxiv.org/abs/2511.21638">Iterative GRPO: Batch-Online Policy Iteration for Multi-Turn RL via Single-Turn RLHF</a>
+        <div class="pub-authors">Daniel R. Jiang, Ankur Samanta, Yukai Yang, <strong>Jalaj Bhandari</strong>, Rémi Munos, Tyler Lu</div>
+        <div class="pub-venue">Accepted at NeurIPS, 2026 <a class="pub-arxiv" href="https://arxiv.org/abs/2511.21638">[arXiv]</a></div>
+      </div>
+      <div class="pub">
+        <a class="pub-title" href="https://www.jmlr.org/papers/volume25/24-0196/24-0196.pdf">Pearl: A Production-Ready Reinforcement Learning Agent</a>
+        <div class="pub-authors">Zheqing Zhu, Rodrigo de Salvo Braz, <strong>Jalaj Bhandari</strong>, Daniel R. Jiang, Yi Wan, Yonathan Efroni, Liyuan Wang, Ruiyang Xu, Hongbo Guo, Alex Nikulkov, Dmytro Korenkevych, Urun Dogan, Frank Cheng, Zheng Wu, Wanqiao Xu</div>
+        <div class="pub-venue">JMLR, 2024 <a class="pub-arxiv" href="https://www.jmlr.org/papers/volume25/24-0196/24-0196.pdf">[link]</a></div>
+      </div>
+      <div class="pub">
+        <a class="pub-title" href="https://arxiv.org/abs/1906.01786">Global Optimality Guarantees For Policy Gradient Methods</a>
+        <div class="pub-authors"><strong>Jalaj Bhandari</strong>, Daniel Russo</div>
+        <div class="pub-venue">Operations Research, 2024 <a class="pub-arxiv" href="https://arxiv.org/pdf/1906.01786">[PDF]</a></div>
+      </div>
+      <div class="pub">
+        <a class="pub-title" href="https://proceedings.mlr.press/v130/bhandari21a/bhandari21a.pdf">On the Linear Convergence of Policy Gradient Methods for Finite MDPs</a>
+        <div class="pub-authors"><strong>Jalaj Bhandari</strong>, Daniel Russo</div>
+        <div class="pub-venue">AISTATS, 2021 <a class="pub-arxiv" href="https://proceedings.mlr.press/v130/bhandari21a/bhandari21a.pdf">[link]</a></div>
+      </div>
+      <div class="pub">
+        <a class="pub-title" href="https://arxiv.org/abs/1806.02450">A Finite Time Analysis of Temporal Difference Learning With Linear Function Approximation</a>
+        <div class="pub-authors"><strong>Jalaj Bhandari</strong>, Daniel Russo, Raghav Singal</div>
+        <div class="pub-venue">Operations Research, 2021 <a class="pub-arxiv" href="https://arxiv.org/pdf/1806.02450">[PDF]</a></div>
       </div>
     </section>
 
