@@ -85,6 +85,7 @@
     .item p { color: var(--muted); margin-top: 4px; }
     .pub { margin-bottom: 28px; }
     h3 { font-size: 1.15rem; font-weight: 600; margin: 40px 0 18px; }
+    h2 + h3, .pub-note + h3 { margin-top: 0; }
     .pub-note { color: var(--muted); font-size: 0.85rem; margin: -12px 0 20px; }
     .pub-title { font-weight: 500; }
     .pub-authors, .pub-venue { color: var(--muted); font-size: 0.95rem; }
@@ -116,7 +117,7 @@
           <span>JB</span>
         </div>
         <div>
-          <p>I am a Research Scientist at the Institute of Foundation Models (IFM), where I work on post-training the K2 series of open-weight foundation models. I was a core contributor to the latest release of the K2-Horizon series of models.</p>
+          <p>I am a Research Scientist at the Institute of Foundation Models (IFM), where I work on post-training the K2 series of open-weight foundation models. I was a core contributor to <a href="https://ifm.ai/k2/">K2-Horizon</a>, the latest release in the K2 series.</p>
           <p>Before IFM, I was a researcher at Meta. I completed my PhD at Columbia University.</p>
         </div>
       </div>
@@ -125,6 +126,7 @@
     <section id="publications">
       <h2>Selected Publications and Preprints</h2>
       <!-- Copy one <div class="pub"> block per paper. Newest first. -->
+      <h3>Post-training</h3>
       <div class="pub">
         <a class="pub-title" href="https://arxiv.org/abs/2611.06868">On Turn-Level Best-of-N Sampling for Scaling LLM Agents</a>
         <div class="pub-authors"><strong>Jalaj Bhandari</strong>*, Dhawal Gupta*, Hongli Zhan*, Zhenting Wang, Varad Pimpalkhute, Zhengzhong Liu, Eric Xing, Rupesh Srivastava</div>
@@ -150,10 +152,11 @@
         <div class="pub-authors">Daniel R. Jiang, Ankur Samanta, Yukai Yang, <strong>Jalaj Bhandari</strong>, Rémi Munos, Tyler Lu</div>
         <div class="pub-venue">Accepted at NeurIPS, 2026 <a class="pub-arxiv" href="https://arxiv.org/abs/2511.21638">[arXiv]</a></div>
       </div>
+      <h3>RL Library</h3>
       <div class="pub">
         <a class="pub-title" href="https://www.jmlr.org/papers/volume25/24-0196/24-0196.pdf">Pearl: A Production-Ready Reinforcement Learning Agent</a>
         <div class="pub-authors">Zheqing Zhu, Rodrigo de Salvo Braz, <strong>Jalaj Bhandari</strong>, Daniel R. Jiang, Yi Wan, Yonathan Efroni, Liyuan Wang, Ruiyang Xu, Hongbo Guo, Alex Nikulkov, Dmytro Korenkevych, Urun Dogan, Frank Cheng, Zheng Wu, Wanqiao Xu</div>
-        <div class="pub-venue">JMLR, 2024 <a class="pub-arxiv" href="https://www.jmlr.org/papers/volume25/24-0196/24-0196.pdf">[link]</a></div>
+        <div class="pub-venue">JMLR, 2024 <a class="pub-arxiv" href="https://www.jmlr.org/papers/volume25/24-0196/24-0196.pdf">[link]</a> <a class="pub-arxiv" href="https://github.com/facebookresearch/pearl/">[github]</a></div>
       </div>
       <h3>RL Theory</h3>
       <div class="pub">
